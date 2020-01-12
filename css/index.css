@@ -174,7 +174,7 @@ img {
   margin: 0 auto;
 }
 nav {
-  margin-left: 28%;
+  margin-left: 46%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,7 +217,7 @@ header {
   border-bottom: 2px dashed #c0c0c0;
 }
 header .header-nav {
-  height: auto;
+  height: 8vh;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
