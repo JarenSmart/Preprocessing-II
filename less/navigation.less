@@ -4,11 +4,23 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media @mobile {
+    justify-content: space-between;
+    width: 77%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   a {
     font-size: 18px;
     margin-right: 10px;
     text-decoration: none;
     color: black;
+    @media @mobile {
+      width: auto;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
   }
 }
