@@ -1,24 +1,106 @@
+header {
+  height: auto;
+  border-bottom: 2px dashed @navigation-border;
+
+  .header-nav {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    @media @mobile {
+      width: auto;
+      height: auto;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 16px;
+
+      h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 18px;
+      }
+    }
+  }
+}
+
 .home {
+  .first-section {
+    border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      width: 90%;
+      margin-left: 5%;
+    }
+
+    h2 {
+      margin-top: 2%;
+      @media @mobile {
+        margin-top: 4%;
+      }
+    }
+
+    p {
+      margin: 10px 0;
+      @media @mobile {
+        margin-bottom: 1%;
+        margin-top: 0;
+      }
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      justify-content: center;
+    }
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
+
+      h2 {
+        @media @mobile {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 90%;
+        }
       }
     }
   }
@@ -26,6 +108,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +127,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 90%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +141,26 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 70%;
+      }
+    }
+
+    .btn {
+      .button();
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
-}// home
+} // home
